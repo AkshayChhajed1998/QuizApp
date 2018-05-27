@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.workstation.quizapp.MainActivity"
+    android:background="#00FF00">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bac"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/TVFD"
+        android:layout_width="250dp"
+        android:paddingRight="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="70dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#00FFFF"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/RLI"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/TVQ"
+            android:layout_width="340dp"
+            android:paddingRight="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FF7722"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/RG"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/RBO1"
+                android:textColor="#FFFF00"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:buttonTint="#00FF00"
+                />
+
+            <RadioButton
+                android:id="@+id/RBO2"
+                android:textSize="20sp"
+                android:textColor="#FFFF00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:buttonTint="#00FF00"
+               />
+
+            <RadioButton
+                android:id="@+id/RBO3"
+                android:textColor="#FFFF00"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:buttonTint="#00FF00"
+             />
+
+            <RadioButton
+                android:id="@+id/RBO4"
+                android:textColor="#FFFF00"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:buttonTint="#00FF00"
+               />
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:id="@+id/LLCB"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <CheckBox
+                android:id="@+id/CBO1"
+                android:textColor="#FFFF00"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:buttonTint="#00FF00"
+                />
+
+            <CheckBox
+                android:id="@+id/CBO2"
+                android:textSize="20sp"
+                android:textColor="#FFFF00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:buttonTint="#00FF00"
+                />
+
+            <CheckBox
+                android:id="@+id/CBO3"
+                android:textColor="#FFFF00"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:buttonTint="#00FF00"
+                />
+
+            <CheckBox
+                android:id="@+id/CBO4"
+                android:textColor="#FFFF00"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:buttonTint="#00FF00"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLEB"
+            android:layout_width="350dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/ET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#FFFF00"
+                android:textSize="25sp"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TVA"
+            android:layout_width="350dp"
+            android:textSize="20sp"
+            android:layout_height="170dp"
+            android:textColor="#FF0000"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_below="@id/RG"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/TVE"
+            android:layout_width="350dp"
+            android:textColor="#FF0000"
+            android:textSize="25sp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_below="@id/RG"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/BV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/RLI"
+        android:background="#44FF00"
+        android:onClick="check"/>
+
+</RelativeLayout>
